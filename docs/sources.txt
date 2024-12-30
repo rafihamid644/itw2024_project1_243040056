@@ -1,12 +1,24 @@
-for ie.png
-<a href="https://www.flaticon.com/free-icons/image-editing" title="image editing icons">Image editing icons created by Freepik - Flaticon</a>
-for id.png
-<a href="https://www.flaticon.com/free-icons/architecture" title="architecture icons">Architecture icons created by justicon - Flaticon</a>
-for ip.png
-<a href="https://www.flaticon.com/free-icons/code" title="code icons">Code icons created by juicy_fish - Flaticon</a>
-for ig.png
-<a href="https://www.flaticon.com/free-icons/gaming" title="gaming icons">Gaming icons created by Freepik - Flaticon</a>
-for ir.png
-<a href="https://www.flaticon.com/free-icons/trail-running" title="trail running icons">Trail running icons created by Freepik - Flaticon</a>
-for ih.png
-<a href="https://www.flaticon.com/free-icons/hiking" title="hiking icons">Hiking icons created by Smashicons - Flaticon</a>
+/images/
+
+-for ie.png
+"https://www.flaticon.com/free-icons/image-editing" 
+-for id.png
+"https://www.flaticon.com/free-icons/architecture" 
+-for ip.png
+"https://www.flaticon.com/free-icons/code" 
+-for ig.png
+"https://www.flaticon.com/free-icons/gaming" 
+-for ir.png
+"https://www.flaticon.com/free-icons/trail-running" 
+-for ih.png
+"https://www.flaticon.com/free-icons/hiking" 
+
+/for cropping images/
+
+https://rounder.pics/crop-image-geometric-forms/
+
+
+/inspiration/
+
+https://www.mareta.space/
+
