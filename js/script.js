@@ -48,4 +48,53 @@ document.addEventListener('DOMContentLoaded', function() {
             navLinksContainer.classList.remove('active');
         }
     });
+
+    // Contact Form Handling
+    const form = document.getElementById('contact-form');
+    const result = document.getElementById('result');
+
+    if (form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            result.innerHTML = "Please wait...";
+            result.style.display = "block";
+
+            fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: json
+            })
+            .then(async (response) => {
+                let json = await response.json();
+                if (response.status == 200) {
+                    result.innerHTML = json.message;
+                    result.classList.remove('error');
+                    result.classList.add('success');
+                    form.reset();
+                } else {
+                    result.innerHTML = json.message;
+                    result.classList.remove('success');
+                    result.classList.add('error');
+                }
+            })
+            .catch(error => {
+                result.innerHTML = "Something went wrong!";
+                result.classList.remove('success');
+                result.classList.add('error');
+            })
+            .then(function() {
+                setTimeout(() => {
+                    result.style.display = "none";
+                    result.classList.remove('success', 'error');
+                }, 5000);
+            });
+        });
+    }
 });
